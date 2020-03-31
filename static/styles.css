@@ -1,8 +1,10 @@
-#gallery {
-    border: 5px solid black;
+html {
+    scroll-behavior:smooth;
 }
 
-
+.lead{
+    background-color:white;
+}
 
 .navbar-inner {
     background:transparent;

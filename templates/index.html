@@ -20,16 +20,16 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class ="navbar-nav mr-auto">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">About</a>
+                                    <a class="nav-link" href="#about">About</a>
                                 </li>   
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Services</a>
+                                    <a class="nav-link" href="#services">Services</a>
                                 </li> 
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Gallery</a>
+                                    <a class="nav-link" href="#project-gallery">Gallery</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Contact</a>
+                                    <a class="nav-link" href="#contact">Contact</a>
                                 </li>
                             </ul>
                         </div>
@@ -41,7 +41,7 @@
     </div>
     
     
-    <div class="container p-5">
+    <div class="container p-5" id="about">
         
         <div class="row">            
             <div class="col-md-6">    
@@ -65,7 +65,7 @@
     </div>        
 
     <div class="jumbotron jumbotron-fluid">
-        <div class="container-fluid">
+        <div class="container-fluid" id="services">
             <h1 class="display-4">Our Services</h1>
             <div class="container p-5">
                 <div class="row">
@@ -98,7 +98,7 @@
         </div>
     </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid" id="project-gallery">
     <h1 class="display-4">Gallery</h1>
     <div class="container p-5">
         
@@ -173,7 +173,7 @@
 
     <script>
 
-            alert("js working");
+            //alert("js working");
                 
             //get list of gallery thumbnails    
             var elements = document.getElementsByClassName("gallery");
@@ -197,7 +197,7 @@
                     var data = JSON.parse(request.responseText);
                     let contents = ''
                     if (data.success) {
-                        alert(`${data.project}`);
+                        //alert(`${data.project}`);
                         
                         for (var i = 0 ; i < (data.project).length ; i++){
                             if (i == 0){
